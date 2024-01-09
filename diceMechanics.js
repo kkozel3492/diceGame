@@ -54,8 +54,6 @@ function checkWinner(x,y){
 }
 
 function toss(){
-    var diceOne = 0;
-    var diceTwo = 0;
 
     diceOne = getRandomNumber();
     changeDice("dice1", diceOne);
