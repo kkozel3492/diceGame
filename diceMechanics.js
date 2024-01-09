@@ -10,33 +10,9 @@ function getRandomNumber(){
 }
 
 function changeDice(dice, x){
-
-      var diceImage = document.getElementById(dice);
-
-    if (diceImage) {
-        switch (x) {
-            case 1:
-                diceImage.src = "images/dice1.png";
-                break;
-            case 2:
-                diceImage.src = "images/dice2.png";
-                break;
-            case 3:
-                diceImage.src = "images/dice3.png";
-                break;
-            case 4:
-                diceImage.src = "images/dice4.png";
-                break;
-            case 5:
-                diceImage.src = "images/dice5.png";
-                break;
-            case 6:
-                diceImage.src = "images/dice6.png";
-                break;
-            default:
-                console.error("Invalid dice value: " + x);
-                break;
-        }
+    if (document.getElementById(dice))
+    {
+        document.getElementById(dice).setAttribute("src", "images/dice" + x.toString() + ".png");
     }
 }
 
